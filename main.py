@@ -1,13 +1,12 @@
 #1st
 num = []
 dels = 0
-for i in range(1, 101):
+for i in range(100, 1001):
     num.append(i)
-for k in range(0, 100):
+for k in range(0, 900):
     if num[k]%17 == 0:
         dels +=1
 print(dels)
-
 
 #2nd
 strr = input()
@@ -22,7 +21,7 @@ import math as m
 q = 3
 while m.sqrt(q) - round(m.sqrt(q)) != 0:
     q = int(input('enter number'))
-    if m.sqrt(q) - round(m.sqrt(q)) != 0:
+    if m.sqrt(q) - round(m.sqrt(q)) == 0:
         print('full sqrt')
         break
 
